@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pixel Composer</title>
+		<script src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="index.js"></script>
+		<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	<body>
+		<div id="header">
+			<label for="length">strip length:
+				<input name="length" type="number" id="length" value="24" min="1">
+			</label>
+
+			<label for="mode">mode:
+				<select name="mode" id="mode">
+					<option value="ONE_TO_ONE">one to one</option>
+					<option value="REPEAT">repeat</option>
+				</select>
+			</label>
+
+			<label for="pattern-length" id="pattern-length-label">pattern length:
+				<input name="pattern-length" type="number" id="pattern-length" value="2" min="1">
+			</label>
+			
+			<span id="status">You need scripts enabled in your browser.</span>
+		</div>
+		<div id="field">
+		</div>
+	</body>
+</html>
+
